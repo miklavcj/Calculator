@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Calculator</title>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
-  </head>
-  <body>
-      <div id="container">
-          <div id="display">
-              <div id="main-display"></div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculator</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="container" class="container">
+
+
+    <div class="row">
+      <div class="col s12 m6 offset-m3 l4 offset-l4">
+        <div class="card-panel blue-grey darken-4 no-padding-margin radius">
+
+          <div id="main-display" class="blue-grey darken-4"></div>
+
+          <div id="numpad" class="row no-padding-margin numpad">
+            <div id="numbers" class="col s9 row no-padding-margin numpad">
+              <div class="waves-effect waves-light btn col s4 sqr number">1</div>
+              <div class="waves-effect waves-light btn col s4 sqr number">2</div>
+              <div class="waves-effect waves-light btn col s4 sqr number">3</div>
+              <div class="waves-effect waves-light btn col s4 sqr number">4</div>
+              <div class="waves-effect waves-light btn col s4 sqr number">5</div>
+              <div class="waves-effect waves-light btn col s4 sqr number">6</div>
+              <div class="waves-effect waves-light btn col s4 sqr number">7</div>
+              <div class="waves-effect waves-light btn col s4 sqr number">8</div>
+              <div class="waves-effect waves-light btn col s4 sqr number">9</div>
+              <div class="k0 waves-effect waves-light btn col s8 sqr number">0</div>
+              <div class="waves-effect waves-light btn col s4 sqr number">.</div>
+              <div class="waves-effect waves-light btn col s12 sqr number">=</div>
+            </div>
+            <div id="symbols" class="col s3 row no-padding-margin numpad">
+              <button class="waves-effect waves-light btn col s12 sqr">+</button>
+              <button class="waves-effect waves-light btn col s12 sqr">-</button>
+              <button class="waves-effect waves-light btn col s12 sqr">x</button>
+              <button class="waves-effect waves-light btn col s12 sqr">÷</button>
+              <button class="waves-effect waves-light btn col s12 sqr">C</button>
+            </div>
           </div>
-          <div id="numpad">
-              <div id="numbers">
-              <button>1</button>
-              <button>2</button>
-              <button>3</button>
-              <button>4</button>
-              <button>5</button>
-              <button>6</button>
-              <button>7</button>
-              <button>8</button>
-              <button>9</button>
-              <button class="k0">0</button>
-              <button>.</button>
-              </div>  
-              <div id="symbols">
-                <button>+</button>
-                <button>-</button>
-                <button>x</button>
-                <button>÷</button>
-                <button>=</button>
-                <button>C</button>
-              </div>
-          </div>
+        </div>
       </div>
-    <script src="script.js"></script>
-  </body>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
 </html>

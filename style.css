@@ -1,50 +1,57 @@
 body {
-    margin: 0;
+  margin: 0;
+  background: #37474f;
 }
-
-#container {
-    width: 500px;
-    margin: 50px auto;
-    border: 1px solid black;
+.container {
+  margin-top: 5rem;
 }
-
-#display {
-    width: 100%;
-    margin: 0 auto;
-    border: 1px solid black;
-    
-}
-
 #main-display {
-    width: 85%;
-    height: 30px;
-    margin: 10px auto;
-    border: 1px solid black;
-    padding: .5em;
-    text-align: right;
-   
+  width: 100%;
+  height: 70px;
+  font-size: 2em;
+  color: #eeeeee;
+  padding: 0.5em;
+  text-align: right;
 }
 
-#numpad {
-    display: flex;
-    justify-content: space-evenly;
+.no-padding-margin {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-#numbers {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
+.no-padding {
+  padding: 0 !important;
 }
 
-#symbols {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-}
-button {
-    margin: 10px;
-    padding: 1em 2em;
+.no-margin {
+  margin: 0 !important;
 }
 
-.k0 {
-    grid-column-start: 1; 
-    grid-column-end: 3;
+.btn {
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eeeeee;
+  color: #37474f;
+}
+
+.numpad {
+  height: 100vw;
+  max-height: 350px;
+}
+
+.sqr {
+  height: 20%;
+}
+
+.radius {
+  border-radius: 15px;
 }

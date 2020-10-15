@@ -12,7 +12,12 @@ function updateDisplay(key) {
 
   if (!isNaN(keyValue)) {
     if (lastKey === null || lastKey === "." || !isNaN(lastKey)) {
-      display.append(keyValue);
+      if (lastKey === null || lastKey === "C") {
+        display.textContent = "";
+        display.append(keyValue);
+      } else {
+        display.append(keyValue);
+      }
     } else if (isNaN(lastKey)) {
       display.textContent = "";
       display.append(keyValue);
@@ -55,7 +60,7 @@ function updateDisplay(key) {
 }
 
 function clear() {
-  display.textContent = "";
+  display.textContent = "0";
   num1 = num2 = null;
   op = "";
   lastKey = null;
